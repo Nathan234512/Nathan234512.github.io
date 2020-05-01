@@ -11,7 +11,7 @@
             
             
             .ingredients-list{
-                color: rgb(9, 31, 117);
+                color: rgb(9, 31, 107)
             
             }
             td{
@@ -100,7 +100,7 @@
                 
             }
             h2{
-                color: rgb(0, 21, 255);
+                color: #0200AF;
                 font-family: HP Simplified;
                 border-bottom: 1px solid rgb(69, 69, 69);
             }
@@ -132,7 +132,11 @@
             table{
                 text-align:center;
             }
-            
+            #mycanvas{
+                border: 5px ridge rgb(5, 16, 87);
+                float: left;
+                
+            }
         </style>
     </head>
     <body>
@@ -363,6 +367,89 @@
         <p><em>Source:<a target="_blank" href="https://www.allrecipes.com/recipe/33647/chocolate-ganache/">allrecipe</a></em></p>
         </div>
         
-        
+        <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      
+      <canvas id="mycanvas"></canvas> 
+        </p>
     </body>
+    
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(820, 400); 
+        frameRate(30);
+        
+        // ProgramCodeGoesHere
+        var bodyX = 200;
+        var bodyY = 220;
+        var bodyW = 121;
+        var faceSize; 
+        background(191, 248, 255);
+        
+        var elephant = function(bodyW, bodyX , bodyY){
+          
+        faceSize = bodyW * 79/121;
+            
+            var faceX = bodyX;
+            var faceY = bodyY - bodyW * 77/200;
+            var leftEarX = faceX - faceSize * 1/2;
+            var leftEarY = faceY - faceSize*19/78; 
+            var rightEarX = faceX + faceSize*1/2;
+            var rightEarY = faceY - faceSize*19/78;
+            
+            var eyeSize = 17;
+            var leftEyeX = faceX - faceSize*15/78;
+            var leftEyeY = faceY - faceSize*11/78;
+            var rightEyeX = faceX + faceSize*15/78;
+            var rightEyeY = faceY - faceSize*11/78;
+            
+            var trunkX = faceX - faceSize*11/78;
+            var trunkY = faceY - faceSize*-14/78;
+            var trunkW = faceSize * 22/78;
+            var trunkH = faceSize * 68/78;
+           
+            stroke(89, 89, 89);
+          
+            fill(120, 120, 119);
+            ellipse(bodyX, bodyY, bodyW, bodyW); // body?
+            
+            ellipse(leftEarX,leftEarY,faceSize * 57/78,faceSize * 90/78);// leftEar
+            ellipse(rightEarX,rightEarY,faceSize * 57/78,faceSize * 90/78);//rightEar
+            
+            //face
+            ellipse(faceX, faceY, faceSize, faceSize); 
+            
+            //eyes
+            fill(0, 0, 0);
+            ellipse(leftEyeX, leftEyeY, faceSize * 15/78,faceSize * 15/78);
+            ellipse(rightEyeX, rightEyeY, faceSize * 15/78,faceSize * 15/78);
+            
+            fill(120, 120, 119);
+            //trunk
+            rect(trunkX,trunkY,trunkW,trunkH);
+        
+            
+           
+        
+        };
+        
+            elephant(120, 200, 220);
+           
+        mousePressed = function() { 
+        
+         elephant(random(50,150), mouseX, mouseY);
+         
+        
+        };
+
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
 </html>
