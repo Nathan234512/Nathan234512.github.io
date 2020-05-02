@@ -1,385 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Recipe book</title>
-        <meta charset="utf-8">
-        <style>
-        
-            Body{
-                background-image: linear-gradient(rgb(0, 32, 107),rgb(71, 70, 71),rgb(0, 0, 0));
-            }
-            
-            
-            .ingredients-list{
-                color: rgb(9, 31, 107)
-            
-            }
-            td{
-                color: rgb(255, 250, 255);
-            }
-            li{
-                color: rgb(104, 99, 255);
-            }
-            strong{
-                color: rgb(100, 0, 125);
-            }
-            ul{
-                border-top: 1px solid rgb(69, 69, 69);
-                border-bottom: 1px solid rgb(69, 69, 69);
-                
-            }
-            
-            .I{
-                border-bottom: 1px solid rgb(69, 69, 69);
-                padding-bottom: 15px;
-            }
-            .steps{
-                border-bottom: 1px solid rgb(69, 69, 69);
-            }
-            
-            
-                
-            
-            #title{
-                border: 5px ridge rgb(5, 16, 87);
-                background: rgb(133, 133, 133);
-                text-align: center;
-                padding: 5px;
-                font-family: HP Simplified;
-                
-            }
-            #contents{
-                border: 5px ridge rgb(5, 16, 87);
-                float:right;
-                width:256px;
-                height:265px;
-                line-height: 25px;
-                text-align: center;
-                background: rgb(184, 184, 184);
-                font-family: convection;
-                padding: 10px;
-                position:fixed;
-                right:50px;
-            }
-            #cookies{
-                border: 5px ridge rgb(5, 16, 87);
-                width: 800px;
-                padding: 10px;
-                margin-top: 15px;
-                text-align: center;
-                background: rgb(184, 184, 184);
-                font-size: 1.1em;
-                font-family: convection;
-            }
-            #brownies{
-                border: 5px ridge rgb(5, 16, 87); 
-                width: 800px;
-                padding: 10px;
-                margin-top: 15px;
-                text-align: center;
-                background: rgb(184, 184, 184);
-                font-size: 1.1em;
-                font-family: convection;
-            }
-            #ganache{
-                border: 5px ridge rgb(5, 16, 87);
-                width: 800px;
-                padding: 10px;
-                margin-top: 15px;
-                text-align: center;
-                background: rgb(184, 184, 184);
-                font-size: 1.1em;
-                font-family: convection;
-            }
-            li{
-                text-align: left;
-            }
-            img{
-                border: 5px ridge rgb(97, 97, 97) ;
-                width: 200px;
-                
-            }
-            h2{
-                color: #0200AF;
-                font-family: HP Simplified;
-                border-bottom: 1px solid rgb(69, 69, 69);
-            }
-            button{
-                border: ridge rgb(11, 44, 143);
-                width: 130px;
-                height: 50px;
-                margin: 5px;
-                position: relative;
-                top:-31px;
-                border-radius: 4px;
-                background: rgb(138, 138, 138);
-                font-family: convection;
-                font-size: 1.025em;
-            }
-            #ct{
-                position: relative;
-                top:-17px;
-            }
-            button:active {
-              background-color: rgb(61, 61, 61);
-              box-shadow: 0 5px #666;
-              transform: translateY(4px);
-            }
-            button:hover {
-              background-color: rgb(12, 3, 138);
-              color: white;
-            }
-            table{
-                text-align:center;
-            }
-            #mycanvas{
-                border: 5px ridge rgb(5, 16, 87);
-                float: left;
-                
-            }
-        </style>
-    </head>
-    <body>
-        
-   
-        <h1 id="title">Disappointment's Recipe Book</h1>
-        
-        <div id="contents">
-            <h2 id="ct">Contents:</h2>
-            <a href="#recipe-1"><button>Chocolate Chip Cookies</button></a>
-            <a href="#recipe-2"><button>Brownies</button></a>
-            <a href="#recipe-3"><button>Chocolate ganache</button></a>
-            <a href="#title"><button>Back To Top</button></a>
-            
-            
-        </div>
-        
-        
-        <div id="cookies">
-            <!--Chocolate chip cookies-->
-        
-        <h2 id="recipe-1">Chocolate Chip Cookies</h2>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/220px-2ChocolateChipCookies.jpg" alt="two chocolate chip cookies" width="100">
-        
-        <ul>
-            <li>Time: 1 hr</li>
-            <li>Serves: 24</li>
-        </ul>
-        
-        
-        <div class="I">
-            <table class="Table">
-            <thead>
-                <tr>
-                    <th class="ingredients-list">Ingredients</th>
-                    <th class="ingredients-list">Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Softened Butter</td>
-                    <td>1 cup</td>
-                </tr>
-                <tr>
-                    <td>White Sugar</td>
-                    <td>1 cup</td>
-                </tr>
-                 <tr>
-                    <td>Packed Brown Sugar</td>
-                    <td>1 cup</td>
-                </tr>
-                 <tr>
-                    <td>Eggs</td>
-                    <td>2</td>
-                </tr>
-                 <tr>
-                    <td>Vanilla extract</td>
-                    <td>2 teaspoons</td>
-                </tr>
-                 <tr>
-                    <td>Baking Soda</td>
-                    <td>1 teaspoons</td>
-                </tr>
-                 <tr>
-                    <td>Hot Water</td>
-                    <td>2 teaspoons</td>
-                </tr>
-                 <tr>
-                    <td>Salt</td>
-                    <td>1/2 teaspoons</td>
-                </tr>
-                 <tr>
-                    <td>Flour</td>
-                    <td>3 cups</td>
-                </tr>
-                 <tr class="last_tr">
-                    <td>Semisweet chocolate chips</td>
-                    <td>2 cups</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-        
-        <div class="steps">
-            <p><strong>Step 1:</strong> Preheat oven to 350 degrees F (175 degrees C).
-</p>
+<!-- This is based on DillingerLee's great template here:
+https://github.com/Team-Code/KA_Offline -->
+<html> 
+ <head>
+    <title>Processing.JS inside Webpages: Template</title> 
+    <style>
+     body{
+      border: 5px solid #000000;
+      padding: 10px;
+      height: 2000px;
+      font-family:HP Simplified;
+      background-image:linear-gradient(rgb(0, 32, 107),rgb(71, 70, 71),rgb(0, 0, 0));
+     }
+     .caption{
+      border: 5px outset #000749;
+      margin-top:10px;
+      margin-left: 10px;
+      width: 350px;
+      text-align:center;
+      padding:5px;
+      background:#5E5E5E;
+     }
+     h1{
+      border: 5px outset #000749;
+      text-align:center;
+      padding:5px;
+      margin:auto;
+      background:#5E5E5E;
+     }
+     .Canvas{
+      border: 5px outset #000749;
+      margin-top:10px;
+      margin-left: 10px;
+     }
+     #canvas-1{
+      position:absolute;
+      top: 165px;
+      left: 15px;
+     }
+     #canvas-2{
+      position:absolute;
+      top:585px;
+      left: 15px;
+     }
+     #canvas-3{
+      position:absolute;
+      top:1005px;
+      left:15px;
+     }
+     #canvas-4{
+      position:absolute;
+      top:1425px;
+      left:15px;
+     }
+     #EA{
+      position:absolute;
+      left:435px;
+      top: 165px;
+     }
+     #HP{
+      position:absolute;
+      left:435px;
+      top: 585px;
+     }
+     #FP{
+      position:absolute;
+      left:435px;
+      top: 1005px;
+     }
+     #MP{
+      position:absolute;
+      left:435px;
+      top: 1425px;
+     }
+     #contents{
+      border: 5px outset #000749;
+      text-align:center;
+      background:#5E5E5E;
+      width: 200px;
+      height: 380px;
+      position:fixed;
+      right: 25px;
+      top: 165px;
+     }
+     button{
+      border: 2px outset #000749;
+      width: 150px;
+      margin-top: 10px;
+      background:#3A3A3A;
+      height: 50px;
+     }
+    </style>
 
-        <p><strong>Step 2:</strong>Cream together the butter, white sugar, and brown sugar until smooth. Beat in the eggs one at a time, then stir in the vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and nuts. Drop by large spoonfuls onto ungreased pans.</p>
-        
-        <p><strong>Step 3:</strong>Bake for about 10 minutes in the preheated oven, or until edges are nicely browned.</p>
-        
-    
-        </div>
-        <p><em>Source: <a  target="_blank" href="https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/">allrecipes</a></em></p>
-        </div>
-        
-        
-        
-        
-        
-        <div id="brownies">
-            <!--Brownies-->
-        
-        <h2 id="recipe-2">Brownies</h2>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chocolatebrownie.JPG/250px-Chocolatebrownie.JPG" alt="Chocolate brownie" width="100">
-        
-        <ul>
-            <li>Time: 35 min</li>
-            <li>Serves: 20</li>
-        </ul>
-        
-        
-        <div class="I">
-            <table>
-            <thead>
-                <tr>
-                    <th class="ingredients-list">Ingredients</th>
-                    <th class="ingredients-list">Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Melted butter</td>
-                    <td>1 cup</td>
-                    
-                </tr>
-                <tr>
-                    <td>White sugar</td>
-                    <td>2 cups</td>
-                    
-                </tr>
-                <tr>
-                    <td>Cocoa powder</td>
-                    <td>1/2 cup</td>
-                    
-                </tr>
-                <tr>
-                    <td>Vanilla extract</td>
-                    <td>1 teaspoon</td>
-                    
-                </tr>
-                <tr>
-                    <td>Eggs</td>
-                    <td>4</td>
-                    
-                </tr>
-                <tr>
-                    <td>Flour</td>
-                    <td>1 1/2 cups</td>
-                    
-                </tr>
-                <tr>
-                    <td>Baking powder</td>
-                    <td>1/2 teaspoon</td>
-                    
-                </tr>
-                <tr>
-                    <td>Salt</td>
-                    <td>1/2 teaspoon</td>
-                    
-                </tr>
-            </tbody>
-        </table>
-        </div>
-        
-        <div class="steps">
-            <p><strong>Step 1:</strong>Preheat the oven to 350 degrees F (175 degrees C). Grease a 9x13-inch pan.</p>
 
-        <p><strong>Step 2:</strong>Combine the melted butter, sugar, cocoa powder, vanilla, eggs, flour, baking powder, and salt. Spread the batter into the prepared pan. Decorate with walnut halves, if desired.</p>
-        
-        <p><strong>Step 3:</strong>Bake in preheated oven for 20 to 30 minutes or until a toothpick inserted in the center comes out with crumbs, not wet. Cool on wire rack.</p>
-        
-       
-        </div>
-         <p><em>Source:<a target="_blank" href="https://www.allrecipes.com/recipe/9599/quick-and-easy-brownies/">allrecipe</a></em></p>
-        </div>
-        
-        
-        
-        <div id="ganache">
-            <!--Chocolate Ganache-->
-        
-        <h2 id="recipe-3">Chocolate Ganache</h2>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/00_Ganach%C3%A9_de_chocolate.jpg/220px-00_Ganach%C3%A9_de_chocolate.jpg" alt=" Chocolate Ganache" width="100">
-        
-        <ul>
-            <li>Time: 20 mins</li>
-            <li>Serves: 16</li>
-        </ul>
-        
-        
-        <div class="I">
-            <table>
-            <thead>
-                <tr>
-                    <th class="ingredients-list">Ingredients</th>
-                    <th class="ingredients-list">Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Chopped bittersweet chocolate</td>
-                    <td>9 ounces</td>
-                </tr>
-                <tr>
-                    <td>Heavy Cream</td>
-                    <td>1 cup</td>
-                </tr>
-                 <tr>
-                    <td>Dark rum</td>
-                    <td>1 tablespoon</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-        
-        
-        <div class="steps">
-            <p><strong>Step 1:</strong>Place the chocolate into a medium bowl. Heat the cream in a small sauce pan over medium heat. Bring just to a boil, watching very carefully because if it boils for a few seconds, it will boil out of the pot. When the cream has come to a boil, pour over the chopped chocolate, and whisk until smooth. Stir in the rum if desired.</p>
-        
-        <p><strong>Step 2:</strong>Allow the ganache to cool slightly before pouring over a cake. Start at the center of the cake and work outward. For a fluffy frosting or chocolate filling, allow it to cool until thick, then whip with a whisk until light and fluffy.</p>
-        
-        
-        </div>
-        <p><em>Source:<a target="_blank" href="https://www.allrecipes.com/recipe/33647/chocolate-ganache/">allrecipe</a></em></p>
-        </div>
-        
-        <p align="center"> 
+</head>
+ <body>
+     
 	<!--This draws the Canvas on the webpage -->
+      <div id="title">
+       <h1>My JavaScript Projects</h1>
+      </div>
       
-      <canvas id="mycanvas"></canvas> 
-        </p>
-    </body>
-    
-    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+      
+      <div id="contents">
+      <h2>Projects</h2>
+      <a href="#canvas-1"><button>Elephant Animation</button></a>
+      <a href="#canvas-2"><button>House Project</button></a>
+      <a href="#canvas-3"><button>Fish Project</button></a>
+      <a href="#canvas-4"><button>Magic 8-Ball</button></a>
+      <a href="#title"><button>Back To Top</button></a>
+      </div>
+      
+      
+      
+      <canvas id="canvas-1" class="Canvas"></canvas>
+      <h2 id="EA" class="caption">Elephant Animation</h2>
+      <canvas id="canvas-2" class="Canvas"></canvas>
+      <h2 id="HP" class="caption">House Project</h2>
+      <canvas id="canvas-3" class="Canvas"></canvas>
+      <h2 id="FP" class="caption">Fish Project</h2>
+      <canvas id="canvas-4" class="Canvas"></canvas>
+      <h2 id="MP" class="caption">Magic 8-Ball</h2>
+      
+ </body>
+ 
+ <!-- Run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+ <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
 
+<!--Ellephant-->
  <script>
     var sketchProc = function(processingInstance) {
      with (processingInstance) {
-        size(820, 400); 
+        size(400, 400); 
         frameRate(30);
         
         // ProgramCodeGoesHere
@@ -441,15 +195,304 @@
         mousePressed = function() { 
         
          elephant(random(50,150), mouseX, mouseY);
-         
         
         };
+
 
     }};
 
     // Get the canvas that Processing-js will use
-    var canvas = document.getElementById("mycanvas"); 
+    var canvas = document.getElementById("canvas-1"); 
     // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
     var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+ <!--house-->
+ <script>
+  var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+        
+        background(219, 255, 255);
+
+        var houseX = 200;
+        var houseY = 200;
+        
+        //window function
+        var windowX = 95;
+        var windowY = 185;
+        var window = function(windowX, windowY) {
+            rect ( windowX, windowY, 75, 75);
+        fill(255, 255, 255);
+        rect ( windowX + 5, windowY + 5,65,65);
+        line(windowX + 37.5, windowY +5, windowX + 37.5, windowY + 70);
+        line(windowX + 5,windowY + 37.5, windowX + 70, windowY + 37.5);
+        };
+        
+        //roof
+        fill(174, 180, 214);
+        triangle(houseX, houseY - 172, houseX + 150, houseY - 50, houseX - 150, houseY - 50);
+        
+        
+        //house
+        fill(82, 36, 2);
+        rect(houseX - 140, houseY -  50, 280, 207);
+        
+        //grass
+        fill(11, 214, 0);
+        rect(-1, 351, 401, 49);
+        
+        //siding
+        for(var o = houseX - 30; o <= 355; o += 20) {
+         line(houseX - 140, o, houseX + 140, o);
+        } 
+        
+        //window loop
+        for (var i = 95; i < 230; i += 133){
+            fill(5, 3, 0);
+            window(i, 185);
+        }
+        
+        //door
+        fill(120, 80, 19);
+        rect(180, 273, 40, 77);
+        
+        //bushes
+        fill(34, 140, 28);
+        for(var j = 60; j <= 155; j += 31) {
+            ellipse(j, 326, 34, 50);
+        } 
+        
+        for(var f = 340; f >= 245; f -= 31) {
+            ellipse(f, 326, 34, 50);
+} 
+        
+     }};
+        
+        // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("canvas-2"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+ <script>
+  var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+        
+        // ProgramCodeGoesHere
+        background(89, 216, 255);
+        var centerX = 200;
+        var centerY = 100;
+        
+        var drawFish = function (centerX, centerY) {
+        
+        
+        var bodyLength = 118;
+        var bodyHeight = 0.63 * bodyLength;
+        var bodyColor = color(mouseX,mouseY);
+        
+        noStroke();
+        fill(bodyColor);
+        // body
+        ellipse(centerX, centerY, bodyLength, bodyHeight);
+        // tail
+        var tailWidth = bodyLength/4;
+        var tailHeight = bodyHeight/2;
+        triangle(centerX-bodyLength/2, centerY,
+                 centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+                 centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+        // eye
+        fill(33, 33, 33);
+        ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+                 
+        
+        
+        };
+        
+        mousePressed = function() {
+            drawFish(mouseX,mouseY);
+            
+        
+        
+        };
+        
+        
+        drawFish(200,200);
+
+
+
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("canvas-3"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc);
+ </script>
+ <!--Ball-->
+ <script>
+  var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+     
+        
+        var ball = function () {
+        //Elephant
+        var bodyX = 200;
+        var bodyY = 220;
+        var bodyW = 121;
+        var faceSize; 
+        
+        var elephant = function(bodyW, bodyX , bodyY){
+          
+        faceSize = bodyW * 79/121;
+            
+            var faceX = bodyX;
+            var faceY = bodyY - bodyW * 77/200;
+            var leftEarX = faceX - faceSize*1/2;
+            var leftEarY = faceY - faceSize*19/78; 
+            var rightEarX = faceX + faceSize*1/2;
+            var rightEarY = faceY - faceSize*19/78;
+            
+            var eyeSize = 17;
+            var leftEyeX = faceX - faceSize*15/78;
+            var leftEyeY = faceY - faceSize*11/78;
+            var rightEyeX = faceX + faceSize*15/78;
+            var rightEyeY = faceY - faceSize*11/78;
+            
+            var trunkX = faceX - faceSize*11/78;
+            var trunkY = faceY - faceSize*-14/78;
+            var trunkW = faceSize * 22/78;
+            var trunkH = faceSize * 68/78;
+           
+            stroke(89, 89, 89);
+          
+            fill(120, 120, 119);
+            ellipse(bodyX, bodyY, bodyW, bodyW); // body?
+            
+            ellipse(leftEarX,leftEarY,faceSize * 57/78,faceSize * 90/78);// leftEar
+            ellipse(rightEarX,rightEarY,faceSize * 57/78,faceSize * 90/78);//rightEar
+            
+            //face
+            ellipse(faceX, faceY, faceSize, faceSize); 
+            
+            //eyes
+            fill(0, 0, 0);
+            ellipse(leftEyeX, leftEyeY, faceSize * 15/78,faceSize * 15/78);
+            ellipse(rightEyeX, rightEyeY, faceSize * 15/78,faceSize * 15/78);
+            
+            fill(120, 120, 119);
+            //trunk
+            rect(trunkX,trunkY,trunkW,trunkH);
+        };
+        
+        
+        //clock
+        var clockSize = 147;
+        var clockCenterX = 200;
+        var clockCenterY = 250;
+        
+        var clock = function (clockCenterX, clockCenterY, clockSize){
+        
+        
+         
+         
+            
+            textSize(clockSize * 15/150);
+            
+            
+            //clock outline
+            fill(0, 0, 0);
+            ellipse(clockCenterX,clockCenterY, clockSize, clockSize);
+            fill(255, 255, 255);
+            ellipse(clockCenterX,clockCenterY,clockSize * 140/150,clockSize * 140/150);
+            
+            //clock hands
+            line(clockCenterX, clockCenterY,clockCenterX,clockCenterY- clockSize * 52/150);
+            line(clockCenterX, clockCenterY,clockCenterX + clockSize *28/150, clockCenterY);
+            
+            //numbers
+            fill(0, 0, 0);
+            //12 o'clock
+            text("12", clockCenterX - clockSize * 12/150, clockCenterY - clockSize * 53/150);
+            //1 o'clock
+            text("1", clockCenterX + clockSize * 19/150 ,clockCenterY - clockSize * 41/150 );
+            //2 o'clock
+            text("2",clockCenterX + clockSize * 41/150,clockCenterY - clockSize * 19/150);
+            //3 o'clock
+            text("3",clockCenterX + clockSize * 50/150, clockCenterY + clockSize * 7/150);
+            //4 o'clock
+            text("4",clockCenterX + clockSize * 40/150, clockCenterY + clockSize * 30/150);
+            //5 o'clock
+            text("5", clockCenterX + clockSize * 25/150, clockCenterY + clockSize * 50/150);
+            // 6 o'clock
+            text("6",clockCenterX , clockCenterY + clockSize * 58/150);
+            //7 o'clock
+            text("7",clockCenterX - clockSize * 26/150, clockCenterY + clockSize * 53/150);
+            //8 o'clock
+            text("8",clockCenterX - clockSize * 50/150,clockCenterY + clockSize * 32/150);
+            //9 o'clock
+            text("9",clockCenterX - clockSize * 57/150,clockCenterY + clockSize * 7/150);
+            //10 o'clock
+            text("10",clockCenterX - clockSize * 54/150, clockCenterY - clockSize * 19/150);
+            //11 o'clock
+            text("11",clockCenterX - clockSize * 34/150, clockCenterY - clockSize * 41/150);
+            
+        
+        };
+        
+        //8-Ball
+        fill(0, 0, 0);
+        ellipse(200, 200, 375, 375);
+        fill(60, 0, 255);
+        triangle(200, 104, 280, 280, 120, 280);
+        fill(255, 255, 255);
+        
+        var answer = floor(random(1, 6));
+         textSize(20);
+        
+        if (answer === 1) {
+            text("IT IS", 177, 200);
+            text("CERTAIN", 160, 245); 
+        }
+        else if (answer === 2 ) {
+            elephant(50, 200, 222);
+        }
+        else if (answer === 3 ) {
+            text("MOST",172,206);    
+            text("LIKELY",169,246);
+        
+        }
+        else if (answer === 4 ) {
+            textSize(15);
+            text("PROBABLY",158,225);
+            text("NOT",185,261);
+        }
+        else if (answer === 5 ) {
+            clock(200,213,75);
+        }
+        };
+        
+        
+        ball();
+        
+        mouseClicked = function() {
+            background(255, 255, 255);
+            ball();
+};
+
+
+
+     
+     }};
+     
+     
+     
+     
+     // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("canvas-4"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc);
  </script>
 </html>
